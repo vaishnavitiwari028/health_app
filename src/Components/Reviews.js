@@ -7,19 +7,16 @@ function Reviews() {
   const reviewsLength = customerReviews.length - 1;
   const [review, setReview] = useState(0);
 
-  // back to previous review
   const backBtnClick = () => {
     setReview(review <= 0 ? reviewsLength : review - 1);
     handleReviewsUpdation();
   };
 
-  // go to newer review
   const frontBtnClick = () => {
     setReview(review >= reviewsLength ? 0 : review + 1);
     handleReviewsUpdation();
   };
 
-  // update reviews
   const handleReviewsUpdation = () => {
     const reviewMessage = customerReviews[review];
     rName = reviewMessage.name;
@@ -27,7 +24,6 @@ function Reviews() {
     rMessage = reviewMessage.message;
   };
 
-  // list review on visit
   handleReviewsUpdation();
 
   return (
