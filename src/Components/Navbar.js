@@ -35,7 +35,6 @@ function Navbar() {
         </Link>
       </h1>
 
-      {/* Desktop */}
       <ul className="navbar-items">
         <li>
           <Link to="/" className="navbar-links">
@@ -73,7 +72,6 @@ function Navbar() {
         <FontAwesomeIcon icon={faCommentDots} /> Live Chat
       </button>
 
-      {/* Mobile */}
       <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>
         <div onClick={openNav} className="mobile-navbar-close">
           <FontAwesomeIcon icon={faXmark} className="hamb-icon" />
@@ -113,7 +111,6 @@ function Navbar() {
         </ul>
       </div>
 
-      {/* Hamburger Icon */}
       <div className="mobile-nav">
         <FontAwesomeIcon
           icon={faBars}
